@@ -7,8 +7,9 @@ plugins {
 
 android {
     namespace = "com.example.akillisehir"
-    compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    compileSdk = 33  // Flutter SDK’nın en son sürümüne göre güncelleyin
+
+    ndkVersion = "23.1.7779620"  // NDK sürümünü ihtiyacınıza göre güncelleyin
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -16,24 +17,20 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8
+        jvmTarget = "1.8"
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "com.example.akillisehir"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
-        versionCode = flutter.versionCode
-        versionName = flutter.versionName
+        minSdk = 21  // Minimum SDK versiyonunu uygulamanızın gereksinimlerine göre güncelleyin
+        targetSdk = 33  // En son sürüm olarak güncellenmeli
+        versionCode = 1  // Sürüm numaranızı belirleyin
+        versionName = "1.0"  // Sürüm adınızı belirleyin
     }
 
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
+            minifyEnabled false  // Kod küçültmeyi etkinleştirebilirsiniz
             signingConfig = signingConfigs.debug
         }
     }

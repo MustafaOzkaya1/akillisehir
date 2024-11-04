@@ -17,11 +17,24 @@ dependencies:
   cupertino_icons: ^1.0.8
   water_drop_nav_bar: ^2.2.2
   sliding_clipped_nav_bar: ^3.1.1
+  auto_size_text: ^3.0.0
+  carousel_slider: ^5.0.0
+  flutter_launcher_icons: ^0.14.1
+  font_awesome_flutter: ^10.7.0
+  flutter_tts: ^4.0.2
+  html: ^0.15.5
+  http: ^1.2.2
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "images/onsmartlogo.png" # Simge olarak kullanmak istediğiniz görselin yolu
 
 flutter:
   uses-material-design: true
