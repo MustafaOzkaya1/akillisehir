@@ -942,12 +942,16 @@ class NewsGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+  double height = MediaQuery.of(context).size.height;
+  double width = MediaQuery.of(context).size.width;
     return Scaffold(
+      
       appBar: AppBar(
         title: const Text("News Grid"),
         centerTitle: true,
       ),
       body: Padding(
+
         padding: const EdgeInsets.all(8.0),
         child: GridView.builder(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
